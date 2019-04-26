@@ -16,9 +16,9 @@ void main()
 
         for (i = 0; i != amount; ++i)
         {
-            char pubName1[22], priName1[23], pubName8[26], priName8[27], n[11];
-            strcpy(pubName1, "RSA "), strcpy(priName1, "RSA ");
-            strcpy(pubName8, "Public Key "), strcpy(priName8, "PRIVATE KEY ");
+            char pubName1[30], pubName8[26], priName1[31], priName8[27], n[11];
+            strcpy(pubName1, "RSA "), strcpy(pubName8, "Public Key ");
+            strcpy(priName1, "RSA "), strcpy(priName8, "PRIVATE KEY ");
             sprintf(n, "%u", i + 1), printf("\n%s.\n", n);
             strcat(pubName8, n), strcat(pubName8, ".txt");
             strcat(priName8, n), strcat(priName8, ".txt");
